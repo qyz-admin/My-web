@@ -160,7 +160,7 @@ function querty(){
 	// 特点 可以自由的追加参数
 	//formdata.append("address", "什么");
 	xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-	//xhr.send(fromdata);
+	xhr.send();
 	xhr.onreadystatechange = function() {
 		if(xhr.status == 200 && xhr.readyState == 4) {
 			console.log(xhr.responseText);
