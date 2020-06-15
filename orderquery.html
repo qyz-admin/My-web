@@ -170,10 +170,10 @@ function querty(){
 function chaxun(){
 	//var myform = document.querySelector("#formdata");
 	//var formdata = new window.FormData(myform);
-$.ajax({
-        type: "POST", dataType: "text",
-         url: "https://goms.giikin.com/admin/order/orderquery.html",
-        data: $("#formdata").serialize(), 
+  $.ajax({
+        type: "get", dataType: "text",
+         url: "https://goms.giikin.com/admin/order/orderquery.html"+$("#formdata").serialize(),
+        data:"", 
      success: function (result) {
             console.log(result);
         }, error: function () {
