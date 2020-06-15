@@ -146,8 +146,8 @@ function querty(){
 	// 现在在XMLHttpRequest2.0 我们可以使用formData来收集表单数据
 	// 获取表单
 	var myform = document.querySelector("#formdata");
-	var formdata = new window.FormData(myform);
-
+	//var formdata = new window.FormData(myform);
+var formdata = new FormData(myform);
 	//var myform = document.querySelector("#form1");
 	// 将表单作为参数传递,再创建formData对象
 	//var formdata = new FromData(myform);
