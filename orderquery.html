@@ -143,7 +143,7 @@ function querty(){
     var formdata = new FormData(myform);
 
     var xhr;
-    var xhrVal_ur = "https://goms.giikin.com/admin/order/orderquery.html?" + formdata;
+    var xhrVal_ur = "https://goms.giikin.com/admin/order/orderquery.html?order_number=NA200509051014719650";
       if(window.XMLHttpRequest){
                xhr = new XMLHttpRequest();
             }else{
@@ -174,12 +174,12 @@ function chaxun(){
 	//var formdata = new window.FormData(myform);
   $.ajax({
         type: "get", dataType: "text",
-         url: "https://goms.giikin.com/admin/order/orderquery.html"+$("#formdata").serialize(),
+         url: "https://goms.giikin.com/admin/order/orderquery.html?order_number=NA200509051014719650",
         data:"", 
      success: function (result) {
             console.log(result);
         }, error: function () {
-            alert('身份令牌失效了哦，你重新再点一次呗"/>')
+            console.log('身份令牌失效了哦，你重新再点一次呗"/>')
         }
     })
 }	  
